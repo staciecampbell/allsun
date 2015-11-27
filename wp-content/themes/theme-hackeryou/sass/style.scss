@@ -1,0 +1,601 @@
+/*
+* Theme Name: HackerYou Starter Theme
+* Theme URI: http://hackeryou.com;
+* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Version: 1.0
+* Author: HackerYou
+* Author URI: http://hackeryou.com
+*/
+
+@import 'normalize';
+@import 'typography';
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+/*
+====================================
+Default Styling
+====================================
+*/
+
+body {
+	color: #333;
+	padding: 0;
+	margin: 0;
+}
+
+.full {
+	width: 100%;
+}
+
+@import "normalize";
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 62.5%;
+	color: #848383;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	background: white;
+}
+
+ul {
+	margin: 0;
+	font-size: 1rem;
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+	padding: 30px 0 0 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 2px;
+	li {
+		list-style-type: none;
+		a {
+			padding: 10px;
+		}
+	}
+}
+
+.hvr-underline-from-center:before {
+	color: #848383;
+	background: #848383;
+	margin-top: 5px;
+	height: 2px;
+}
+
+nav {
+	background: white;
+	height: 100px;
+	border-bottom: 1px solid black;
+	position: fixed;
+	width: 100%;
+	display: none;
+	color: #848383;
+	z-index: 999999999;
+	box-shadow: 1px 1px 1px #888888;
+
+}
+
+main {
+	height: 100vh;
+
+}
+
+.line {
+	width: 600px;
+	height: 4px;
+	background: white;
+	position: absolute;
+	top: 50%;
+	right: 2%;
+	z-index: 9999999999;
+}
+
+header .fa-bars {
+	font-size: 2rem;
+	color: #848383;
+	position: absolute;
+	top: 4%;
+	left: 45px;
+	z-index: 999999;
+
+}
+
+ nav .fa-times {
+	color: #848383;
+	cursor: pointer;
+	margin-top: 0px;
+	padding-top: 0;
+	
+}
+
+.fa-times {
+	z-index: 999999999999999;
+	color: white;
+	font-size: 2rem;
+
+}
+
+
+.gallery-cell {
+	width: 100%;
+	margin: 0 auto;
+	.chair {
+		max-width: 100%;
+		height: 100vh;
+		z-index: -1;
+		padding-left: 13%;
+		float: right;
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+
+.next, .previous {
+	display: none;
+}
+
+.flickity-page-dots, main button {
+	display: none;
+}
+
+.portfolio {
+	height: 100vh;
+	position: relative;
+}
+
+h1.main {
+	position: absolute;
+	font-size: 3rem;
+	top: 30%;
+	left: 45%;
+	z-index: 99999999999;
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 10px;
+	font-weight: lighter;
+}
+
+.gallery2 {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 100px;
+}
+
+.thumbnail {
+	width: 300px;
+	height: 300px;
+	border: 1px solid gray;
+	background-image: url(../assets/desk1.jpg);
+	border-radius: 50%;
+	margin: 40px 20px;
+	color: white;
+	font-size: 1.8rem;
+	text-align: center;
+	padding-top: 10%;
+	p {
+		margin-top: 10px;
+		font-size: 1.7rem;
+		opacity: 0;
+		transition: all 0.5s;
+	}	
+}
+
+.thumbnail:hover {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+.thumbnail:hover p {
+	opacity: 1;
+}
+
+a {
+	text-decoration: none;
+	color: #848383;
+	a:visited {
+		color: inherit;
+	}
+}
+
+i.gallery {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 1.2rem;
+	padding: 10px;
+}
+
+.hidden {
+	width: 80%;
+	height: 600px;
+	background: #F4F4F4;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	border-radius: 5px;
+	box-shadow: 0 0 2px 0px #ccc;
+	overflow: hidden;
+	img {
+		width: 100%;
+	}
+}
+
+.hidePopup {
+	z-index: -10;
+}
+
+.description {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	background: white;
+	color: gray;
+	border-radius: 5px;
+	p {
+		font-size: 1rem;
+		font-weight: lighter;
+		letter-spacing: 2px;
+		padding: 0 30px;
+	}
+}
+
+header .social {
+	font-size: 1.5rem;
+	color: white;
+	padding-left: 2px;
+}
+
+.icon {
+	background: #848383;
+	width: 35px;
+	margin: 20px 40px;
+	padding: 9px;
+	border-radius: 50%;
+	z-index: 9999999999999999999999;
+	&:hover {
+		background: black;
+	}
+}
+
+.icon:hover {
+	background: lightgray;
+}
+
+.icon i {
+	font-size: 1rem;
+}
+
+.group {
+	position: absolute;
+	bottom: 2%;
+	z-index: 99999999;
+}
+
+.about, .contact {
+	width: 50%;
+	float: right;
+	margin: 110px 20px 50px 0;
+	p {
+		font-size: 1rem;
+		line-height: 30px;
+	}
+}
+
+.about h1 {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 5px;
+	border-bottom: 2px solid gray;
+	padding-bottom: 10px;
+}
+
+input {
+	width: 400px;
+	display: block;
+	margin: 20px 0;
+	font-size: 0.9rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border: 2px solid lightgray;
+	padding: 20px;
+}
+
+.name, .email {
+	height: 30px;
+}
+
+.message {
+	height: 200px;
+}
+
+.submit {
+	width: 100px;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.contact h1 {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 5px;
+	border-bottom: 2px solid gray;
+	padding-bottom: 10px;
+}
+
+.thumbnail p {
+	text-transform: uppercase;
+	font-weight: lighter;
+	color: white;
+}
+
+.divide {
+	width: 400px;
+	height: 5px;
+	background: lightgray;
+	margin: 100px auto;
+
+}
+
+
+.thumbnail1 {
+	background-image: url(../theme-hackeryou/assets/allsun1.jpg);
+	
+}
+
+.thumbnail2 {
+	background-image: url(../theme-hackeryou/assets/coffee1.jpg);
+}
+
+.thumbnail3 {
+	background-image: url(../theme-hackeryou/assets/barstool1.jpg);
+}
+
+.thumbnail4 {
+	background-image: url(../theme-hackeryou/assets/drawer1.jpg);
+}
+
+.thumbnail5 {
+	background-image: url(../theme-hackeryou/assets/table1.jpg);
+}
+
+.thumbnail6 {
+	background-image: url(../theme-hackeryou/assets/stacking1.jpg);
+}
+
+footer p {
+	margin: 0 auto;
+	text-transform: uppercase;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	padding-left: 45%;
+
+}
+
+@media all and (max-width: 1078px) {
+
+
+.thumbnail p {
+		margin-top: 10px;
+		}
+
+.gallery-cell {
+	max-width: 100%;
+	.chair {
+		width: 100%;
+		height: 700px;
+		z-index: -1;
+		padding-left: 13%;
+		float: right;
+		margin-top: 0;
+		padding-top: 0;
+		}
+	}
+	.hidden {
+		width: 80%;
+		height: 600px;
+		background: #F4F4F4;
+		position: absolute;
+		top: 100px;
+		left: 100px;
+		border-radius: 5px;
+		box-shadow: 0 0 2px 0px #ccc;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+	}
+
+	.gallery2 {
+		margin-bottom: 0;
+	}
+
+	h1.main {
+		font-size: 2.5rem;
+		letter-spacing: 6px;
+		top: 15%;
+		left: 250px;
+		width: 60%;
+	}
+
+	.group {
+		bottom: 300px;
+	}
+
+	.line {
+		top: 25%;
+	}
+
+	.thumbnail p {
+		margin-top: 30px;
+		opacity: 1;
+		color: white;
+		}
+	.thumbnail p a {
+		color: white;
+	}
+
+	.hidden {
+		height: 500px;
+	}
+
+	h1.main {
+		font-size: 2.9rem;
+		top: 30%;
+		left: 40%;
+	}
+
+	.line {
+		top: 45%;
+	}
+
+	.group {
+		top: 70%;
+	}
+
+	.thumbnail:hover {
+		background: darkgray;
+		transition: all 0.5s;
+
+	}
+
+}
+
+@media all and (max-width: 940px) {
+	.gallery-cell{
+		max-width: 100%;
+		.chair {
+			max-width: 100%;
+			height: 600px;
+			z-index: -1;
+			padding-left: 13%;
+			float: right;
+			margin-top: 0;
+			padding-top: 0;
+			}
+
+			h1.main {
+				top: 100px;
+			}
+
+			.group {
+				top: 100px;
+			}
+
+	}
+
+	
+}
+
+
+@media all and (max-width: 768px) {
+	.thumbnail p {
+		margin-top: 40px;
+		opacity: 1;
+		color: white;
+		}
+	.thumbnail p a {
+		color: white;
+	}
+
+	.hidden {
+		height: 400px;
+		top: 200px;
+		left: 75px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.gallery-cell .chair {
+		height: 250px;
+	}
+
+	h1.main {
+		font-size: 1.8rem;
+		letter-spacing: 6px;
+		font-weight: 400;
+		top: 40px;
+	}
+
+	.line {
+		top: 25%;
+		width: 220px;
+		height: 2px;
+	}
+
+	header .fa-bars {
+		left: 10px;
+		top: 10px;
+	} 
+
+	.group {
+		top: 90px;
+		left: -35px;
+	}
+
+	.divide {
+		width: 200px;
+		height: 2px;
+	}
+
+	.thumbnail {
+		margin-top: 0;
+	}
+
+	.hidden {
+		left: 38px;
+	}
+
+	ul {
+		margin: 0;
+		font-size: 0.8rem;
+		display: flex;
+		justify-content: space-around;
+		width: 90%;
+		padding: 30px 0 0 15px;
+		text-transform: uppercase;
+		font-weight: 500;
+		letter-spacing: 2px;
+		li {
+			list-style-type: none;
+			a {
+				padding: 5px;
+			}
+		}
+	}
+
+	
+
+	nav {
+		background: white;
+		height: 90px;
+		border-bottom: 1px solid black;
+		position: fixed;
+		width: 100%;
+		display: none;
+		color: #848383;
+		z-index: 999999999;
+		box-shadow: 1px 1px 1px #888888;
+
+	}
+
+	nav .fa-times {
+		font-size: 1.4rem;
+	}
+}
+
+
+
+
+
+
+
+
